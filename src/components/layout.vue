@@ -1,7 +1,7 @@
 
 <template>
     <div>
-        <el-container>
+        <el-container class="x-container">
             <el-header height="3.5rem">
                 <v-menus></v-menus>
             </el-header>
@@ -49,9 +49,7 @@
 </script>
 
 <style>
-/*
- */
-.el-header {
+.x-container .el-header {
     margin: 0rem;
     padding: 0rem;
     height: 3.5rem;
@@ -60,13 +58,13 @@
     top: 0rem;
     left: 0rem;
 }
-.el-main {
+.x-container .el-main {
     margin-top: 3.5rem;
     margin-bottom: 2rem;
     height: 100%;
     width: 100%;
 }
-.el-footer {
+.x-container .el-footer {
     background-color: #545c64;
     color: white;
     margin: 0rem;
