@@ -10,7 +10,7 @@
         name: 'ProcessView',
         data() {
             return {
-                name: '1'
+                name: '2'
             };
         },
         methods: {
