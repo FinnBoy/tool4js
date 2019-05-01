@@ -2,7 +2,7 @@
 <template>
     <div>
         <el-container>
-            <el-header>
+            <el-header height="3.5rem">
                 <v-menus></v-menus>
             </el-header>
             <el-main>
@@ -10,8 +10,8 @@
                     <router-view></router-view>
                 </transition>
             </el-main>
-            <el-footer>
-            Footer
+            <el-footer height="2rem">
+            © 2019 Finn Zhao. All rights reserved.
             </el-footer>
         </el-container>
     </div>
@@ -47,3 +47,36 @@
         router: router
     }
 </script>
+
+<style>
+/*
+ */
+.el-header {
+    margin: 0rem;
+    padding: 0rem;
+    height: 3.5rem;
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+.el-main {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    padding: 0rem;
+    height: 100%;
+    width: 100%;
+}
+.el-footer {
+    background-color: #545c64;
+    color: white;
+    margin: 0rem;
+    padding: 0rem;
+    height: 2rem;
+    line-height: 2rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+</style>

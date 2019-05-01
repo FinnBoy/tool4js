@@ -2,14 +2,14 @@
 <template>
     <el-menu
     :default-active="activeIndex"
-    class="el-menu-demo"
+    class="x-menu"
     mode="horizontal"
     background-color="#545c64"
     text-color="#fff"
     active-text-color="#ffd04b">
         <el-menu-item index="1"><router-link to="/process">待处理</router-link></el-menu-item>
         <el-menu-item index="2"><router-link to="/management">管理项</router-link></el-menu-item>
-        <el-submenu index="3">
+        <el-submenu index="3" class="x-submenu">
             <template slot="title">我的工作台</template>
             <el-menu-item index="3-1">待定1</el-menu-item>
             <el-menu-item index="3-2">待定2</el-menu-item>
@@ -42,3 +42,14 @@
         }
     }
 </script>
+
+<style>
+ul.x-menu>.el-menu-item {
+    height: 3rem;
+    line-height: 3rem;
+}
+ul.x-menu .x-submenu>.el-submenu__title {
+    height: 3rem;
+    line-height: 3rem;
+}
+</style>
