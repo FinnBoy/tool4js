@@ -63,7 +63,6 @@
 .el-main {
     margin-top: 3.5rem;
     margin-bottom: 2rem;
-    padding: 0rem;
     height: 100%;
     width: 100%;
 }
