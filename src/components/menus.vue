@@ -97,11 +97,11 @@ ul.x-menu .x-submenu>.el-submenu__title {
     width: 3rem;
     overflow: hidden;
     position: absolute;
-    top: 45%;
+    top: 8rem;/*
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
 }
 .x-cls-menu-collapsed .el-menu--collapse {
     margin-left: -0.6rem;

@@ -2,8 +2,8 @@
 <template>
     <div>
         <el-container>
-            <el-header>
-                aaaaa
+            <el-header height="3rem">
+                Header
             </el-header>
             <el-container class="x-cls-container">
                 <el-aside width="3rem">
@@ -87,6 +87,7 @@
 }
 .el-container .x-cls-container .el-main {
     margin-left: 3rem;
+    padding: 0.5rem;
 }
 .el-container .el-footer {
     background-color: #ffffff;
