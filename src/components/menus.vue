@@ -110,6 +110,7 @@ ul.x-menu .x-submenu>.el-submenu__title {
 .x-cls-menu {
     width: 13rem;
     border-right: 1px solid #eaecef;
+    background-color: #ffffff;
     padding: 0rem;
     position: absolute;
     top: 0%;
