@@ -3,7 +3,7 @@
     <div>
         <el-container class="x-container">
             <el-header height="3.5rem">
-                <v-menus></v-menus>
+                <x-menus></x-menus>
             </el-header>
             <el-main>
                 <transition>
@@ -21,13 +21,18 @@
     // transition 标签用于增加 过渡效果/css 的挂载标签
     import VueRouter from 'vue-router'
 
-    import Menus from './menus.vue'
+    import Menus from '../components/menus.vue'
 
-    import ManagementView from '../views/management.vue'
-    import ProcessView from '../views/process.vue'
+    import UploaderView from './uploader.vue'
+    import ManagementView from './management.vue'
+    import ProcessView from './process.vue'
 
     let router = new VueRouter({
         routes: [
+            {
+                path: '/uploader',
+                component: UploaderView
+            },
             {
                 path: '/management',
                 component: ManagementView
@@ -42,7 +47,7 @@
     export default {
         name: 'Layout',
         components: {
-            'v-menus': Menus
+            'x-menus': Menus
         },
         router: router
     }
@@ -61,6 +66,7 @@
 .x-container .el-main {
     margin-top: 3.5rem;
     margin-bottom: 2rem;
+    padding: 0.5rem;
     height: 100%;
     width: 100%;
 }

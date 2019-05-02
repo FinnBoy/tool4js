@@ -27,7 +27,6 @@
 </template>
 
 <script>
-    // @select="handleSelect"
     export default {
         name: 'Menus',
         data() {
@@ -36,9 +35,6 @@
             };
         },
         methods: {
-            handleSelect(key, keyPath) {
-                console.log(key, keyPath);
-            }
         }
     }
 </script>
