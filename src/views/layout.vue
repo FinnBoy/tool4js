@@ -1,15 +1,17 @@
 
 <template>
     <div>
-        <el-container class="x-container">
-            <el-header height="3.2rem">
-                <x-menus></x-menus>
-            </el-header>
-            <el-main>
-                <transition>
-                    <router-view></router-view>
-                </transition>
-            </el-main>
+        <el-container>
+            <el-container class="x-cls-container">
+                <el-aside width="3rem">
+                    <x-menus></x-menus>
+                </el-aside>
+                <el-main>
+                    <transition>
+                        <router-view></router-view>
+                    </transition>
+                </el-main>
+            </el-container>
             <el-footer height="2rem">
             © 2019 Finn Zhao. All rights reserved.
             </el-footer>
@@ -54,7 +56,8 @@
 </script>
 
 <style>
-.x-container .el-header {
+/*
+.el-container .el-header {
     margin: 0rem;
     padding: 0rem;
     height: 3.2rem;
@@ -62,17 +65,29 @@
     position: absolute;
     top: 0rem;
     left: 0rem;
-}
-.x-container .el-main {
-    margin-top: 3.2rem;
+}*/
+.el-container .x-cls-container {
+    margin-top: 0rem;
     margin-bottom: 2rem;
-    padding: 0.5rem;
+    padding: 0rem;
     height: 100%;
     width: 100%;
 }
-.x-container .el-footer {
-    background-color: #545c64;
-    color: white;
+.el-container .x-cls-container .el-aside {
+    height: 100%;
+    width: 3rem;
+    overflow: visible;
+    position: absolute;
+    z-index: 1000;
+    top: 0rem;
+    left: 0rem;
+}
+.el-container .x-cls-container .el-main {
+    margin-left: 3rem;
+}
+.el-container .el-footer {
+    background-color: #ffffff;
+    color: #545c64;
     margin: 0rem;
     padding: 0rem;
     height: 2rem;
