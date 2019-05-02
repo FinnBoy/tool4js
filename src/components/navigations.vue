@@ -1,6 +1,6 @@
 
 <template>
-    <div class="x-navigations">
+    <div class="x-cls-navigations">
         <el-button-group>
             <el-button plain icon="el-icon-back" @click="goBack"></el-button>
             <slot></slot>
@@ -21,13 +21,13 @@
 </script>
 
 <style>
-.x-navigations {
+.x-cls-navigations {
     margin-bottom: 0.5rem;
 }
-.x-navigations>.el-button-group {
+.x-cls-navigations>.el-button-group {
     float: left;
 }
-.x-navigations>div {
+.x-cls-navigations>div {
     clear: both;
 }
 </style>
