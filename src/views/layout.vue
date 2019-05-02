@@ -2,7 +2,7 @@
 <template>
     <div>
         <el-container class="x-container">
-            <el-header height="3.5rem">
+            <el-header height="3.2rem">
                 <x-menus></x-menus>
             </el-header>
             <el-main>
@@ -57,14 +57,14 @@
 .x-container .el-header {
     margin: 0rem;
     padding: 0rem;
-    height: 3.5rem;
+    height: 3.2rem;
     width: 100%;
     position: absolute;
     top: 0rem;
     left: 0rem;
 }
 .x-container .el-main {
-    margin-top: 3.5rem;
+    margin-top: 3.2rem;
     margin-bottom: 2rem;
     padding: 0.5rem;
     height: 100%;
