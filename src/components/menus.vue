@@ -9,10 +9,7 @@
             :default-active="active"
             :router="routerable"
             :collapse="collapsed"
-            @select="handleSelect"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b">
+            @select="handleSelect">
             <el-menu-item index="1" :disabled="disabled">
                 <i class="el-icon-tickets"></i>
                 <span slot="title">待处理</span>
@@ -112,8 +109,8 @@ ul.x-menu .x-submenu>.el-submenu__title {
 }
 .x-cls-menu {
     width: 13rem;
+    border-right: 1px solid #eaecef;
     padding: 0rem;
-    background-color: #545c64;
     position: absolute;
     top: 0%;
     bottom: 0%;

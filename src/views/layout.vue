@@ -2,6 +2,9 @@
 <template>
     <div>
         <el-container>
+            <el-header>
+                aaaaa
+            </el-header>
             <el-container class="x-cls-container">
                 <el-aside width="3rem">
                     <x-menus></x-menus>
@@ -56,18 +59,18 @@
 </script>
 
 <style>
-/*
 .el-container .el-header {
     margin: 0rem;
+    border-bottom: 1px solid #eaecef;
     padding: 0rem;
-    height: 3.2rem;
+    height: 3rem;
     width: 100%;
     position: absolute;
     top: 0rem;
     left: 0rem;
-}*/
+}
 .el-container .x-cls-container {
-    margin-top: 0rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     padding: 0rem;
     height: 100%;
