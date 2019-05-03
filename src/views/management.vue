@@ -3,7 +3,7 @@
     <div>
         <x-navigations>
             <template v-slot:buttons>
-                <el-menu-item index="2">
+                <el-menu-item index="/uploader">
                     <i class="el-icon-upload"></i>
                 </el-menu-item>
             </template>

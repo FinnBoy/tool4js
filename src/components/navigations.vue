@@ -3,8 +3,9 @@
     <div class="x-cls-navigations">
         <el-menu
             :collapse="false"
+            @select="handleSelect"
             mode="horizontal">
-            <el-menu-item index="1">
+            <el-menu-item index="/xback">
                 <i class="el-icon-back"></i>
             </el-menu-item>
             <slot name="buttons"></slot>
@@ -22,6 +23,14 @@
     export default {
         name: 'Navigations',
         methods: {
+            handleSelect (index, indexPath) {
+                if ('/xback' == index) {
+                    this.$router.go(-1)
+                } else {
+                    this.$router.push(index)
+                }
+                console.log(index, indexPath)
+            }
         }
     }
 </script>
