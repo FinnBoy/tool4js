@@ -1,11 +1,20 @@
 
 <template>
     <div class="x-cls-navigations">
-        <el-button-group>
-            <el-button plain icon="el-icon-back" @click="goBack"></el-button>
-            <slot></slot>
-        </el-button-group>
-        <div></div>
+        <el-menu
+            :collapse="false"
+            mode="horizontal">
+            <el-menu-item index="1">
+                <i class="el-icon-back"></i>
+            </el-menu-item>
+            <slot name="buttons"></slot>
+        </el-menu>
+        <div style="clear: both;"></div>
+        <div class="x-cls-left"></div>
+        <div class="x-cls-right">
+            <slot name="contents"></slot>
+        </div>
+        <div style="clear: both;"></div>
     </div>
 </template>
 
@@ -13,9 +22,6 @@
     export default {
         name: 'Navigations',
         methods: {
-            goBack() {
-                this.$router.go(-1)
-            }
         }
     }
 </script>
@@ -24,10 +30,25 @@
 .x-cls-navigations {
     margin-bottom: 0.5rem;
 }
-.x-cls-navigations>.el-button-group {
-    float: left;
+.x-cls-navigations .x-cls-left {
+    width: 3rem;
 }
-.x-cls-navigations>div {
-    clear: both;
+.x-cls-navigations .x-cls-right {
+    margin-left: 3rem;
+    width: 100%;
+}
+.x-cls-navigations .el-menu {
+    float: left;
+    width: 100%;
+}
+.x-cls-navigations .el-menu--horizontal {
+    border-bottom: 0rem;
+}
+.x-cls-navigations .el-menu-item {
+    border-bottom: 0rem;
+    padding: 0rem 0.5rem;
+}
+.x-cls-navigations .el-menu-item.is-active {
+    border-bottom: 0rem;
 }
 </style>

@@ -1,16 +1,24 @@
 
 <template>
     <div>
-        Process
+        <x-navigations>
+            <template v-slot:contents>
+                Process
+            </template>
+        </x-navigations>
     </div>
 </template>
 
 <script>
+    import Navigations from '../components/navigations.vue'
+
     export default {
         name: 'ProcessView',
+        components: {
+            'x-navigations': Navigations
+        },
         data() {
             return {
-                name: '2'
             };
         },
         methods: {

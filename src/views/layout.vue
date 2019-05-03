@@ -59,16 +59,6 @@
 </script>
 
 <style>
-.el-container .el-header {
-    margin: 0rem;
-    border-bottom: 1px solid #eaecef;
-    padding: 0rem;
-    height: 3rem;
-    width: 100%;
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-}
 .el-container .x-cls-container {
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -81,13 +71,21 @@
     width: 3rem;
     overflow: visible;
     position: absolute;
-    z-index: 1000;
     top: 0rem;
     left: 0rem;
 }
 .el-container .x-cls-container .el-main {
-    margin-left: 3rem;
-    padding: 0.5rem;
+    padding: 0rem;
+}
+.el-container .el-header {
+    margin: 0rem;
+    border-bottom: 1px solid #eaecef;
+    padding: 0rem;
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
 }
 .el-container .el-footer {
     background-color: #ffffff;

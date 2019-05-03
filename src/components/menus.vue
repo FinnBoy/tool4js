@@ -97,6 +97,7 @@ ul.x-menu .x-submenu>.el-submenu__title {
     width: 3rem;
     overflow: hidden;
     position: absolute;
+    z-index: 1000;
     top: 10rem;/*
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -113,6 +114,7 @@ ul.x-menu .x-submenu>.el-submenu__title {
     background-color: #ffffff;
     padding: 0rem;
     position: absolute;
+    z-index: 1200;
     top: 0%;
     bottom: 0%;
 }
