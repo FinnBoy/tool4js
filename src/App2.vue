@@ -5,7 +5,7 @@
                 Header
             </el-header>
             <el-container>
-                <el-aside>
+                <el-aside width="15rem">
                     <div class="f-cls-menu">
                         <el-menu
                             default-active="/upload"
