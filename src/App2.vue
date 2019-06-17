@@ -108,7 +108,26 @@
 
 <style>
 body {
-  margin: 0px;
+    margin: 0px;
+}
+#app .el-header {
+    color: #545c64;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+#app .el-footer {
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+    color: #545c64;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
 }
 .f-cls-menu {
     height: 100%;
